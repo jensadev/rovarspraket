@@ -1,5 +1,5 @@
 <template>
-  <header class="logo">R</header>
+  <header class="logo" title="Rövarspråket">R</header>
   <p>{{ message }}</p>
   <input @input="translate" placeholder="Skriv något...">
   <footer>
