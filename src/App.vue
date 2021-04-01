@@ -14,6 +14,14 @@
 
   const message = ref(' ')
 
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  // console.log(urlParams.get('translate'))
+
+  if (urlParams.get('translate')) {
+    translate({target: { value: urlParams.get('translate')}});
+  }
+
   function translate(target) {
     const konsonanter = 'bcdfghjklmnpqrstvxz';
     let translation = '';
