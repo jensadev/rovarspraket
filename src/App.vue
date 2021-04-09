@@ -24,7 +24,7 @@
   }
 
   function translate(target) {
-    const konsonanter = 'bcdfghjklmnpqrstvxz';
+    const konsonanter = 'bcdfghjklmnpqrstvwxz';
     let translation = '';
     for (let char of target.target.value) {
       let index = konsonanter.indexOf(char.toLowerCase());
